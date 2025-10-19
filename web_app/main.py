@@ -90,7 +90,6 @@ async def chat(request: ChatRequest):
 
             content = ""
             # 結果を処理
-            from pprint import pprint
 
             if not mcp_results:
                 raise RuntimeError("MCP tool returned no results")
