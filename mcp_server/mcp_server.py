@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 import matplotlib
 from typing import Literal, Optional
 from datetime import datetime
-
+import smtplib
+from email.mime.text import MIMEText
 from fastmcp import FastMCP, Image
 
 # Matplotlibの日本語設定
@@ -145,6 +146,29 @@ def create_chart_from_json(
         return Image(data=buf.getvalue(), format="png")
     except Exception as e:
         return f"グラフ生成中にエラーが発生しました: {e}"
+
+
+@mcp.tool()
+def send_notification_email() -> str:
+    """
+    タスクが完了したときに通知メールを送信する。
+    ※ユーザーから明示的にメール送信の指示があった場合のみ実行すること。
+
+    Args:
+    Returns:
+        メール送信のステータスメッセージ。
+    """
+    host = "mailhog"
+    port = 1025
+
+    msg = MIMEText("完了通知メールのToolが実行された結果、このメールが送信されました。")
+    msg["Subject"] = "タスク完了"
+    msg["From"] = "from@example.com"
+    msg["To"] = "to@example.com"
+
+    with smtplib.SMTP(host, port) as s:
+        s.send_message(msg)
+    return f"メール送信に成功しました"
 
 
 if __name__ == "__main__":

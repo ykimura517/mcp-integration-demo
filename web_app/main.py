@@ -79,7 +79,7 @@ async def chat(request: ChatRequest):
             }
 
         # 以下、ツール呼び出し時の処理
-        image_url = None
+        # image_url = None
         messages.append(response_message)
         for tool_call in tool_calls:
             function_name = tool_call.function.name
