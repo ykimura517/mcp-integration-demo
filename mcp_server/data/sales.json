@@ -1,0 +1,14 @@
+[
+  {"date": "2025-08-15", "product": "製品A", "sales": 150, "branch": "東京"},
+  {"date": "2025-09-01", "product": "製品A", "sales": 100, "branch": "東京"},
+  {"date": "2025-09-02", "product": "製品A", "sales": 120, "branch": "東京"},
+  {"date": "2025-09-15", "product": "製品A", "sales": 110, "branch": "大阪"},
+  {"date": "2025-09-28", "product": "製品A", "sales": 130, "branch": "東京"},
+  {"date": "2025-08-20", "product": "製品B", "sales": 200, "branch": "大阪"},
+  {"date": "2025-09-05", "product": "製品B", "sales": 210, "branch": "東京"},
+  {"date": "2025-09-10", "product": "製品B", "sales": 180, "branch": "大阪"},
+  {"date": "2025-09-25", "product": "製品B", "sales": 220, "branch": "大阪"},
+  {"date": "2025-09-03", "product": "製品C", "sales": 80, "branch": "東京"},
+  {"date": "2025-09-18", "product": "製品C", "sales": 90, "branch": "大阪"},
+  {"date": "2025-09-29", "product": "製品C", "sales": 85, "branch": "東京"}
+]

@@ -1,0 +1,12 @@
+[
+  {"customer_id": "001", "name": "田中 太郎", "age": 35, "branch": "東京"},
+  {"customer_id": "002", "name": "鈴木 花子", "age": 28, "branch": "東京"},
+  {"customer_id": "003", "name": "佐藤 次郎", "age": 42, "branch": "大阪"},
+  {"customer_id": "004", "name": "伊藤 さやか", "age": 22, "branch": "東京"},
+  {"customer_id": "005", "name": "渡辺 健太", "age": 55, "branch": "大阪"},
+  {"customer_id": "006", "name": "山本 美咲", "age": 31, "branch": "東京"},
+  {"customer_id": "007", "name": "中村 雄一", "age": 48, "branch": "大阪"},
+  {"customer_id": "008", "name": "小林 あゆみ", "age": 29, "branch": "東京"},
+  {"customer_id": "009", "name": "加藤 浩", "age": 61, "branch": "大阪"},
+  {"customer_id": "010", "name": "吉田 直樹", "age": 38, "branch": "東京"}
+]

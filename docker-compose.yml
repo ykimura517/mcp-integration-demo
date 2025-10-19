@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  mcp_server:
+    build: ./mcp_server
+    container_name: mcp_server_container
+    networks:
+      - mcp_network
+    # ポートを公開する必要はない。web_appからサービス名でアクセスする。
+
+  web_app:
+    build: ./web_app
+    container_name: web_app_container
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mcp_server
+    networks:
+      - mcp_network
+    volumes:
+      - ./web_app:/app
+    env_file:
+      - .env
+
+networks:
+  mcp_network:
+    driver: bridge
